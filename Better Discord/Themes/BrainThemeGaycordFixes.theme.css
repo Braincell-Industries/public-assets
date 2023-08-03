@@ -1,0 +1,95 @@
+/**
+ * @name BrainTheme (Gaycord Fixes)
+ * @author The Braincell Man
+ * @description Fix gaycord's stupid old ugly CSS
+ * @version 4.2.0
+ */
+
+/**
+ * Fixes (In Order):
+ * > Improve Discord Modals
+ * > Improve the user area
+ * > No Light Mode elements while using Dark Mode
+ * > Fix the "GIF" text part having a massive gap
+ * > Create a colored border around roles
+ * > Second Monitor Fix (Hide New Message Stuff When Unfocused)
+ * > Fancier ShowSessions plugin popup
+*/
+
+/* Improve Discord Modals */
+@import url(//dablulite.github.io/css-snippets/BetterModals/import.css);
+
+/* Improve the user area */
+@import url(//dablulite.github.io/css-snippets/UserReimagined/import.css);
+
+/* No Light Mode elements while using Dark Mode */
+@import url(//dablulite.github.io/css-snippets/NoLightInDark/import.css);
+
+/* Fix the "GIF" text part having a massive gap */
+.altText-SaS-Ao {
+  margin: .25rem 0 -0.15rem;
+  line-height: 17px;
+}
+
+/* Create a colored border around roles */
+:root{
+  --roles-roundness: 0;
+
+  --roles-roundness-calc: calc((var(--roles-roundness) + .21) * 25px)
+}
+.role-2TIOKu {
+  transform: translate(0);
+  border: 0;
+  border-radius: var(--roles-roundness-calc);
+}
+.role-2TIOKu .roleRemoveIcon-387wKV {
+  margin: 0;
+  left: unset;
+  transform: translate(50%,-50%);
+}
+.role-2TIOKu .roleRemoveButton-17oXnT{position: static}
+.role-2TIOKu .roleCircle-3TFUOr:before {
+  content: '';
+  top: 0;left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  background: inherit;
+  border-radius: var(--roles-roundness-calc);
+  border: 2px solid transparent;
+  -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+}
+
+/* Second Monitor Fix (Hide New Message Stuff When Unfocused) */
+html:not(.app-focused) .isUnread-3Lojb- {
+    border-color: transparent
+}
+.isUnread-3Lojb- {
+    transition: .15s
+}
+html:not(.app-focused) .newMessagesBar-1hF-9G {
+    opacity: 0
+}
+.newMessagesBar-1hF-9G {
+    transition: .15s
+}
+
+
+/* Fancier ShowSessions plugin popup */
+.ShowSessions-modal-item{padding:20px 20px 0!important;background:var(--background-secondary)}
+.ShowSessions-modal-headerContainer>b{order:1;padding-bottom:10px;font-weight:600;color:var(--header-primary);font-family:var(--font-display)}
+.ShowSessions-modal-avatarWrapper .wrapper-1VLyxH{width:40px!important;height:40px!important}
+.ShowSessions-modal-badgesContainer{padding:0 0 10px 8px !important;order:1}
+.ShowSessions-modal-headerContainer{margin-bottom:20px!important}
+.ShowSessions-modal-headerContainer .ShowSessions-modal-avatarWrapper{margin:0 10px 0 0 !important;order:0!important}
+.ShowSessions-modal-message{position:absolute;padding:20px 50px;font-size:14px;line-height:1.4;color:var(--header-secondary)}
+.ShowSessions-modal-body{height:0;overflow:hidden;background-color:var(--background-primary);border-radius:5px;padding:0 20px;transition:.5s ease}
+.ShowSessions-modal-item:hover .ShowSessions-modal-body{height:162px;margin-bottom:20px;transition:.5s ease}
+.ShowSessions-modal-sessionInfo b{text-transform:uppercase;font-size:12px;font-weight:600;color:var(--header-secondary);font-family:var(--font-display)}
+.ShowSessions-modal-sessionInfo span{font-size:14px}
+.ShowSessions-modal-sessionInfo:nth-child(1){position:absolute;right:40px;transform:translate(0,-58px)}
+.ShowSessions-modal-sessionInfo:nth-child(1) b{display:none}
+.ShowSessions-modal-sessionInfo:nth-child(2){margin:20px 0 0}
