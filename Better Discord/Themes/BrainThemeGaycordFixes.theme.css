@@ -10,6 +10,7 @@
  * > Improve Discord Modals
  * > Improve the user area
  * > No Light Mode elements while using Dark Mode
+ * > Better "Authorized Apps" Tab
  * > Fix the "GIF" text part having a massive gap
  * > Create a colored border around roles
  * > Second Monitor Fix (Hide New Message Stuff When Unfocused)
@@ -24,6 +25,9 @@
 
 /* No Light Mode elements while using Dark Mode */
 @import url(//dablulite.github.io/css-snippets/NoLightInDark/import.css);
+
+/* A redesign to the Authorized app cards, as well as a counter at the top of the tab */
+@import url(//dablulite.github.io/css-snippets/BetterAuthApps/import.css);
 
 /* Fix the "GIF" text part having a massive gap */
 .altText-SaS-Ao {
