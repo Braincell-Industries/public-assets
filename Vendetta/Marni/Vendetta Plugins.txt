@@ -1,0 +1,10 @@
+https://vd-plugins.github.io/proxy/aeongdesu.github.io/vdplugins/FirstMessage
+https://vd-plugins.github.io/proxy/aeongdesu.github.io/vdplugins/MarkAllAsRead
+https://vd-plugins.github.io/proxy/aeongdesu.github.io/vdplugins/SlowmodeExtended
+https://vd-plugins.github.io/proxy/gabe616.github.io/VendettaPlugins/message-markdown-preview
+https://vd-plugins.github.io/proxy/gabe616.github.io/VendettaPlugins/char-counter
+https://vd-plugins.github.io/proxy/nightnutsky.github.io/vendetta-plugins/addonList
+https://vd-plugins.github.io/proxy/martinz64.github.io/vendetta-plugins/PlatformIndicators
+https://vd-plugins.github.io/proxy/amsyarasyiq.github.io/letup/MoreConfirm/
+https://vd-plugins.github.io/proxy/beefers.github.io/strife/NoTrack
+https://vd-plugins.github.io/proxy/mugman.catvibers.me/vendetta-plugins/sysinfo
