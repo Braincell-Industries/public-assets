@@ -1,7 +1,0 @@
-/* Full credit goes to: https://github.com/Knewest */
-
-/* Fix the "GIF" text part having a massive gap */
-.altText__6dd8b {
-  margin: .25rem 0 -0.15rem;
-  line-height: 17px;
-}
